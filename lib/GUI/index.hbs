@@ -7,6 +7,13 @@
     <link rel="icon" type="image/png" href="{{ baseUrl }}/-/static/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="{{ baseUrl }}/-/static/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        var loc = window.location;
+        if (loc && loc.protocol.indexOf('http') !== -1) {
+            loc.href = loc.href.replace('http://', 'https://')
+        }
+    </script>
   </head>
   <body class="body">
     <header class="main-header">
